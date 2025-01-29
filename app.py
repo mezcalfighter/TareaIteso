@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from transformers import AutoModelForCausalLM, AutoTokenizer
+import os
 
 # Carga del modelo y el tokenizador
 model_name = "distilgpt2"  # Modelo gratuito y ligero
@@ -35,5 +36,9 @@ def chat():
 
 
 # Ejecutar la aplicación
+# if __name__ == '__main__':
+#     app.run(debug=True, host='0.0.0.0', port=5000)
+
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get("PORT", 5000))  # Render define el puerto automáticamente
+    app.run(host='0.0.0.0', port=port)
