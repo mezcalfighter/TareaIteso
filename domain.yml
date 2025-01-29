@@ -1,0 +1,35 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - technical_support
+  - password_reset
+  - account_issue
+  - software_installation
+  - network_problem
+  - hardware_problem
+  - other_support
+
+responses:
+  utter_greet:
+    - text: "¡Hola! ¿Cómo puedo ayudarte hoy?"
+  utter_goodbye:
+    - text: "¡Hasta luego! Si necesitas algo más, no dudes en preguntar."
+  utter_technical_support:
+    - text: "¿En qué te puedo ayudar con soporte técnico?"
+  utter_password_reset:
+    - text: "Parece que necesitas restablecer tu contraseña. Por favor, abre un ticket con soporte."
+  utter_account_issue:
+    - text: "¿Tienes problemas con tu cuenta? Si es así, abre un ticket con soporte."
+  utter_software_installation:
+    - text: "Puedo ayudarte con la instalación de software. Si no puedo, por favor abre un ticket con soporte."
+  utter_network_problem:
+    - text: "¿Estás teniendo problemas con la red? Si el problema persiste, abre un ticket con soporte."
+  utter_hardware_problem:
+    - text: "Parece que tienes un problema de hardware. Te sugiero abrir un ticket con soporte."
+  utter_other_support:
+    - text: "Lo siento, no puedo resolver este problema aquí. Por favor, abre un ticket con soporte."
+
+actions:
+  - action_open_ticket

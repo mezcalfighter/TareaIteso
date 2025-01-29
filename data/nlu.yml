@@ -1,0 +1,64 @@
+version: "2.0"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hola
+      - Buenas tardes
+      - ¿Qué tal?
+      - Hola, ¿cómo estás?
+
+  - intent: goodbye
+    examples: |
+      - Adiós
+      - Nos vemos
+      - Hasta luego
+      - Chau
+
+  - intent: technical_support
+    examples: |
+      - Necesito soporte técnico
+      - Tengo un problema técnico
+      - Ayuda con un problema técnico
+      - Necesito asistencia con mi equipo
+
+  - intent: password_reset
+    examples: |
+      - Olvidé mi contraseña
+      - No puedo acceder a mi cuenta
+      - Quiero restablecer mi contraseña
+      - ¿Cómo puedo recuperar mi contraseña?
+
+  - intent: account_issue
+    examples: |
+      - Mi cuenta no funciona
+      - Tengo problemas con mi cuenta
+      - Mi cuenta está bloqueada
+      - Mi cuenta no se actualiza
+
+  - intent: software_installation
+    examples: |
+      - ¿Cómo instalo el software?
+      - Tengo problemas con la instalación
+      - No puedo instalar el software
+      - Necesito ayuda para instalar un programa
+
+  - intent: network_problem
+    examples: |
+      - No tengo internet
+      - Mi conexión de red está caída
+      - Hay problemas con la red
+      - No puedo conectarme a la red
+
+  - intent: hardware_problem
+    examples: |
+      - Mi computadora está rota
+      - No enciende el equipo
+      - Tengo problemas con mi hardware
+      - El hardware no funciona correctamente
+
+  - intent: other_support
+    examples: |
+      - Mi problema no está en la lista
+      - No sé cómo resolver este problema
+      - Necesito ayuda con algo diferente
